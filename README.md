@@ -8,3 +8,9 @@ This project's purpose is to teach me the ropes of Data Warehousing, especially 
 ## Tech Stack
 ## How to Run
 ## Key Insights
+
+STAR SCHEMA\n
+                 dim_household
+                       |
+                       |
+dim_region ---- fact_energy_usage ---- dim_date
