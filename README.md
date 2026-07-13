@@ -50,8 +50,18 @@ The following relationships are used to join different tables for analytical que
 ## How to Run
 
 ## Screenshots
-BigQuery:
+I've included a few screenshots of both my personal GCP BigQuery Dashboard and the Data Studio dashboard.
+
+### BigQuery
+
+<img width="1873" height="881" alt="Screenshot 2026-07-13 at 3 57 56 pm" src="https://github.com/user-attachments/assets/0963dd00-5512-4273-94d2-9abea1593d33" />
+
+<img width="1508" height="829" alt="Screenshot 2026-07-13 at 3 58 41 pm" src="https://github.com/user-attachments/assets/4356eb48-72e0-4869-87b1-5ea53b4081a4" />
 
 
-Data Studio (Looker Studio):
+### Data Studio
+
+<img width="1049" height="1045" alt="Screenshot 2026-07-13 at 1 06 19 pm" src="https://github.com/user-attachments/assets/fd8a77c2-60fd-4639-a04a-5d2844e69228" />
+
+<img width="1797" height="888" alt="Screenshot 2026-07-13 at 3 59 10 pm" src="https://github.com/user-attachments/assets/b3000fec-cf34-40ff-b961-9950353504a5" />
 
