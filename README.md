@@ -37,7 +37,9 @@ The following relationships are used to join different tables for analytical que
 - fact_energy_usage.date --> dim_date.date
 
 ### Considerations
-
+- Star schema for better query performance and widely used in BigQuery, Snowflake
+- Seperation of concerns by transforming raw data into structured tables for better readability and maintainability
+- Scalable as the model can be extended with additional dimensions (e.g: weather, tariffs)
 
 ## Tech Stack
 - Google GCP's BigQuery
@@ -48,4 +50,8 @@ The following relationships are used to join different tables for analytical que
 ## How to Run
 
 ## Screenshots
+BigQuery:
+
+
+Data Studio (Looker Studio):
 
