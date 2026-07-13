@@ -12,6 +12,11 @@ CSV → BigQuery Datasets → SQL Transformations → Star Schema → Data Studi
 ```
 ## Data Model
 ## Tech Stack
+- Google GCP's BigQuery
+- SQL
+- Data Studio (Looker Studio)
+- CSV (mock data)
+
 ## How to Run
 ## Key Insights
 
