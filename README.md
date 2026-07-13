@@ -7,9 +7,9 @@ This project builds a cloud-based data warehouse using BigQuery to analyse energ
 
 ## Architecture
 The basic architecture starts with uploading CSV files into BigQuery datasets, using SQL for transformations, creating dimensional tables (for star schema) and generating a dashboard with Data Studio (formerly Looker Studio).
-
+```
 CSV → BigQuery Datasets → SQL Transformations → Star Schema → Data Studio Dashboard
-
+```
 ## Data Model
 ## Tech Stack
 ## How to Run
