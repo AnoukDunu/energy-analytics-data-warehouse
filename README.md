@@ -11,6 +11,10 @@ The basic architecture starts with uploading CSV files into BigQuery datasets, u
 CSV → BigQuery Datasets → SQL Transformations → Star Schema → Data Studio Dashboard
 ```
 ## Data Model
+The Star Schema design was chosen as it is a commonly used data modelling approach in modern datawarehouses. This is due to the schema being optimised for analytical workloads. As the goal of this small project was to analyse the energy consumption trends across households, regions and rimes, this seemed like the most logical option.\n
+
+This model seperates fact tables from dimension tables (dim_ which are used as descriptions). In this case, the fact_energy_usage table is connected to dimension tables (dim_households etc.) to give additional context such as household details, geographic location and time.
+
 - fact_energy_usage
 - dim_households
 - dim_region
@@ -18,7 +22,7 @@ CSV → BigQuery Datasets → SQL Transformations → Star Schema → Data Studi
 
 Star Schema:
 ```
-                 dim_household
+                 dim_households
                        |
                        |
 dim_region ---- fact_energy_usage ---- dim_date
