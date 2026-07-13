@@ -1,0 +1,3 @@
+Need to update DOCS with:
+    1. acrchitecture
+    2. data model (star schema)
