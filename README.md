@@ -16,7 +16,9 @@ CSV → BigQuery Datasets → SQL Transformations → Star Schema → Data Studi
 ## Key Insights
 
 STAR SCHEMA\n
+```
                  dim_household
                        |
                        |
 dim_region ---- fact_energy_usage ---- dim_date
+```
