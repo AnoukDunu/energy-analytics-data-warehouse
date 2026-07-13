@@ -11,6 +11,13 @@ The basic architecture starts with uploading CSV files into BigQuery datasets, u
 ```
 CSV → BigQuery Datasets → SQL Transformations → Star Schema → Data Studio Dashboard
 ```
+For a more visual respresentation of the architecture, I've included the hand-drawn version below, which can also be found in [docs](https://github.com/AnoukDunu/energy-analytics-data-warehouse/tree/main/docs).
+
+(also because I wanted to add some colour to a rather bleak README page).
+
+<img width="2360" height="1640" alt="architecture" src="https://github.com/user-attachments/assets/f489a088-5d87-4d58-a483-5fc1e4055216" />
+
+
 ## Data Model
 The Star Schema design was chosen as it is a commonly used data modelling approach in modern datawarehouses. This is due to the schema being optimised for analytical workloads. As the goal of this small project was to analyse the energy consumption trends across households, regions and rimes, this seemed like the most logical option.\n
 
