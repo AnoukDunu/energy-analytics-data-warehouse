@@ -11,6 +11,18 @@ The basic architecture starts with uploading CSV files into BigQuery datasets, u
 CSV → BigQuery Datasets → SQL Transformations → Star Schema → Data Studio Dashboard
 ```
 ## Data Model
+- fact_energy_usage
+- dim_households
+- dim_region
+- dim_date
+
+Star Schema:
+```
+                 dim_household
+                       |
+                       |
+dim_region ---- fact_energy_usage ---- dim_date
+```
 ## Tech Stack
 - Google GCP's BigQuery
 - SQL
@@ -18,12 +30,6 @@ CSV → BigQuery Datasets → SQL Transformations → Star Schema → Data Studi
 - CSV (mock data)
 
 ## How to Run
-## Key Insights
 
-STAR SCHEMA\n
-```
-                 dim_household
-                       |
-                       |
-dim_region ---- fact_energy_usage ---- dim_date
-```
+## Screenshots
+
