@@ -1,12 +1,13 @@
 # EnergySphere Analytics
-This is a Data Warehouse project utilising the Google Cloud Platform (GCP).
+This is a Data Warehouse project utilising the Google Cloud Platform (GCP)'s BigQuery and Data Studio (formerly Looker Studio) to analyse energy consumption trends in Australia.
 This project's purpose is to teach me the ropes of Data Warehousing, especially with the use of a popular tool like BigQuery in GCP's tools.
 
 ## Overview
-This project builds a cloud-based data warehouse using BigQuery to analyse energy consumption across households and regions. 
+This project builds a cloud-based data warehouse using BigQuery to analyse energy consumption across households and regions.
+The raw data in the CSV files were auto-generated due to not being able to find proper public data for the project
 
 ## Architecture
-The basic architecture starts with uploading CSV files into BigQuery datasets, using SQL for transformations, creating dimensional tables (for star schema) and generating a dashboard with Data Studio (formerly Looker Studio).
+The basic architecture starts with uploading CSV files into BigQuery datasets, using SQL for transformations, creating dimensional tables (for star schema) and generating a dashboard with Data Studio.
 ```
 CSV → BigQuery Datasets → SQL Transformations → Star Schema → Data Studio Dashboard
 ```
