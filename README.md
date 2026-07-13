@@ -45,6 +45,36 @@ The following relationships are used to join different tables for analytical que
 - CSV (mock data)
 
 ## How to Run
+A step by step process:
+
+1. Create a new project with a name of your choosing. (mine is 'energy-sphere-project')
+2. In the new project create a dataset and upload [raw CSV](https://github.com/AnoukDunu/energy-analytics-data-warehouse/tree/main/data) data.
+3. In Queries, run an [SQL scripts](https://github.com/AnoukDunu/energy-analytics-data-warehouse/tree/main/sql/tables) to clean and transform data into dim_ tables.
+```
+CREATE OR REPLACE TABLE `[your_project_name].energy_dw.dim_household` AS
+SELECT
+  household_id,
+  household_size,
+  dwelling_type
+FROM `[your_project_name].energy_dw.raw_households`;
+
+```
+4. Query the tables to extract information from the tables
+```
+SELECT d.date,SUM(f.energy_kwh) AS total_kwh
+FROM `[your_project_name].energy_dw.fact_energy_usage` f
+JOIN
+    `[[your_project_name]].energy_dw.dim_date` d
+ON
+    f.date = d.date
+GROUP BY
+    d.date
+ORDER BY
+    d.date;
+``` 
+5. Connect the fact table to the Data Studio dashboard to create a report
+
+Refer to the following screenshots section for guidance and how to configure Data Studio reports.
 
 ## Screenshots
 I've included a few screenshots of both my personal GCP BigQuery Dashboard and the Data Studio dashboard.
