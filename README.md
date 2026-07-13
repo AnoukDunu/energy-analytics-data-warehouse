@@ -31,6 +31,13 @@ dim_region ---- fact_energy_usage ---- dim_date
 The schema for the rest of the dimensional tables can be found [here](https://github.com/AnoukDunu/energy-analytics-data-warehouse/tree/main/sql/dimensional%20tables) and are pretty self-explanatory.
 
 ### Relationships
+The following relationships are used to join different tables for analytical queries. The fact table have columns that directly refer to a specific column in a seperate table, which is more efficient when querying.
+- fact_energy_usage.household_id --> dim_households.household_id
+- fact_energy_usage.region_id --> dim_region.region_id
+- fact_energy_usage.date --> dim_date.date
+
+### Considerations
+
 
 ## Tech Stack
 - Google GCP's BigQuery
