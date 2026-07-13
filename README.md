@@ -74,7 +74,7 @@ ORDER BY
 ``` 
 5. Connect the fact table to the Data Studio dashboard to create a report
 
-Refer to the following screenshots section for guidance and how to configure Data Studio reports.
+** Refer to the following screenshots section for guidance and how to configure Data Studio reports.
 
 ## Screenshots
 I've included a few screenshots of both my personal GCP BigQuery Dashboard and the Data Studio dashboard.
