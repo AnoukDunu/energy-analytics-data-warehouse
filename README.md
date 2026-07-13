@@ -15,11 +15,6 @@ The Star Schema design was chosen as it is a commonly used data modelling approa
 
 This model seperates fact tables from dimension tables (dim_ which are used as descriptions). In this case, the fact_energy_usage table is connected to dimension tables (dim_households etc.) to give additional context such as household details, geographic location and time.
 
-- fact_energy_usage
-- dim_households
-- dim_region
-- dim_date
-
 Star Schema:
 ```
                  dim_households
