@@ -28,7 +28,10 @@ Star Schema:
 dim_region ---- fact_energy_usage ---- dim_date
 ```
 
-The schema for the rest of the dimensional tables can be found here and are pretty self-explanatory.
+The schema for the rest of the dimensional tables can be found [here](https://github.com/AnoukDunu/energy-analytics-data-warehouse/tree/main/sql/dimensional%20tables) and are pretty self-explanatory.
+
+### Relationships
+
 ## Tech Stack
 - Google GCP's BigQuery
 - SQL
